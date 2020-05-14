@@ -1,0 +1,37 @@
+// import dynamic from 'next/dynamic'
+// import { getAllPostIds, getPostData, getPostContent } from 'lib/posts'
+
+// export default function BlogPostPage({ postData: data }) {
+// 	console.log('the data', data);
+// 	const content = dynamic(() => import(`blog/${data.id}`))
+// 	// Not convinced this works, but this is theoretically how it happens
+// 	// const MDXMetadata = dynamic(() => import(`../blog/${filename}`).then(mod => mod.metadata))
+// 	// console.log('the content', MDXMetadata)
+// 	return (
+// 		<div>
+// 			{console.log("content", content)}
+// 			<content />
+// 			<h2>Blog Title: {data.title}</h2>
+//       <span><i>Published at <b>{data.publishedAt}</b></i></span>
+// 		</div>
+// 	)
+// }
+
+// export function getStaticPaths() {
+// 	const paths = getAllPostIds();
+// 	console.log("all paths ", paths);
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
+
+// export async function getStaticProps({ params }) {
+// 	const postData = getPostData(params.id);
+// 	console.log("postData ", postData);
+// 	return {
+// 		props: {
+// 			postData,
+// 		}
+// 	}
+// }

@@ -1,0 +1,31 @@
+{
+  "name": "vixalien-blog",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "prettier '**/*.{js,ts,tsx}' --write"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^1.6.1",
+    "@next/mdx": "^9.3.6",
+    "copee": "^1.0.6",
+    "intersection-observer": "^0.7.0",
+    "next": "^9.3.6",
+    "prismjs": "^1.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.25.1",
+    "swr": "^0.2.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2"
+  },
+  "pre-commit": "lint"
+}
