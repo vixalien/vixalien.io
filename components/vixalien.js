@@ -1,7 +1,7 @@
 const Logo = (props) => {
   return (
     <svg
-      viewBox="12.5 50 200 150"
+      viewBox="37.5 50 150 150"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       style={{ borderRadius: '50%' }}

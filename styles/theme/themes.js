@@ -16,9 +16,16 @@ export const darkTheme = {
   fg: '#fff',
   'accents-1': '#eee',
   'accents-2': '#888',
-  'accents-3': '#333',
+  'accents-3': '#aaa',
   'accents-4': '#444',
   'geist-foreground': '#ccc',
   'geist-success': '#fff',
-  'link-color': '#0070f3'
+  'link-color': '#0070f3',
+  overrides: `
+  	b {
+  		color: var(--fg);
+  	}
+  	mark {
+  		background: #e3a9f0cc;
+  	}`
 };

@@ -20,7 +20,7 @@ export default ({ icon, ...props }) => {
           background-color: transparent;
           outline: none;
           font-size: 1rem;
-          color: #555;
+          color: var(--fg);
         }
 
         input::-webkit-search-cancel-button {
@@ -58,7 +58,7 @@ export default ({ icon, ...props }) => {
 
         div:focus-within,
         div:active {
-          border: 1px solid var(--accents-2);
+          border: 1px solid var(--fg);
         }
       `}</style>
     </>

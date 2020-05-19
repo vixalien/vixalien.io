@@ -36,8 +36,8 @@ const Index = () => (
 
     <ul>
       <li>
-        Mail: <a href="">geoangercola@gmail.com</a> [Don't forget me to tell me
-        how I can improve.]
+        Mail: <a href="mailto:geoangercola@gmail.com">geoangercola@gmail.com</a>{' '}
+        [Don't forget me to tell me how I can improve.]
       </li>
       <li>
         Web: <a href="//vixalien.now.sh">click</a>

@@ -1,5 +1,6 @@
 import GitHub from '../components/github';
 import Vixalien from '../components/vixalien';
+import Theme from '../components/theme';
 import Head from 'next/head';
 
 export default function Header({ title, description, text }) {
@@ -20,7 +21,7 @@ export default function Header({ title, description, text }) {
 
         <div className="links">
           <a href="/" aria-label="Vixalien Home">
-            <Vixalien width="40" />
+            <Vixalien width="30" />
           </a>
           <a
             href="https://github.com/vixalien"
@@ -30,9 +31,22 @@ export default function Header({ title, description, text }) {
           >
             <GitHub />
           </a>
+          <a aria-label="Toggle theme">
+            <Theme />
+          </a>
         </div>
       </div>
       <style jsx>{`
+        a {
+          color: inherit;
+          cursor: pointer;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: var(--radius);
+        }
+        a:hover {
+          background-color: var(--accents-4);
+        }
         h1 {
           margin: var(--gap-double) 0;
         }

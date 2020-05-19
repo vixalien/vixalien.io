@@ -41,8 +41,8 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
+  background-image: radial-gradient(var(--accents-4) 1px, transparent 1px),
+    radial-gradient(var(--accents-4) 1px, transparent 1px);
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
@@ -126,7 +126,7 @@ pre :global(code) {
 
 code {
   font-size: 0.8rem;
-  background: #f1f1f1;
+  background: var(--accents-4);
   padding: var(--gap-quarter);
   border-radius: var(--radius);
   font-family: var(--font-mono);

@@ -24,6 +24,8 @@ export const GlobalStyles = createGlobalStyle`
     `}
   }
 
+  ${({ theme }) => theme.overrides};
+
   header {
   	overflow: hidden;
   }
