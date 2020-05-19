@@ -17,7 +17,7 @@ export default () => (
               d="M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',
                 strokeWidth: '32px'
@@ -27,7 +27,7 @@ export default () => (
               d="M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',
                 strokeWidth: '32px'
@@ -37,7 +37,7 @@ export default () => (
               points="400 179 400 64 352 64 352 133"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',
                 strokeWidth: '32px'
@@ -60,7 +60,7 @@ export default () => (
               d="M256,160c16-63.16,76.43-95.41,208-96a15.94,15.94,0,0,1,16,16V368a16,16,0,0,1-16,16c-128,0-177.45,25.81-208,64-30.37-38-80-64-208-64-9.88,0-16-8.05-16-17.93V80A15.94,15.94,0,0,1,48,64C179.57,64.59,240,96.84,256,160Z"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',
                 strokeWidth: '32px'
@@ -73,7 +73,7 @@ export default () => (
               y2="448"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',
                 strokeWidth: '32px'
@@ -97,7 +97,7 @@ export default () => (
               d="M248,64C146.39,64,64,146.39,64,248s82.39,184,184,184,184-82.39,184-184S349.61,64,248,64Z"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeMiterlimit: 10,
                 strokeWidth: '32px'
               }}
@@ -106,7 +106,7 @@ export default () => (
               points="220 220 252 220 252 336"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeMiterlimit: 'round',
                 strokeWidth: '32px'
@@ -119,13 +119,16 @@ export default () => (
               y2="340"
               style={{
                 fill: 'none',
-                stroke: '#000',
+                stroke: 'currentColor',
                 strokeLinecap: 'round',
                 strokeMiterlimit: 10,
                 strokeWidth: '32px'
               }}
             />
-            <path d="M248,130a26,26,0,1,0,26,26A26,26,0,0,0,248,130Z" />
+            <path
+              d="M248,130a26,26,0,1,0,26,26A26,26,0,0,0,248,130Z"
+              style={{ fill: 'currentColor' }}
+            />
           </svg>
         }
       />

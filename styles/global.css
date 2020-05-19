@@ -12,15 +12,6 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --bg: #fff;
-  --fg: #000;
-  --accents-1: #111;
-  --accents-2: #333;
-  --accents-3: #888;
-  --accents-4: #eee;
-  --geist-foreground: #000;
-  --geist-success: #000;
-
   --radius: 8px;
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -93,7 +84,7 @@ figure {
 }
 
 a {
-  color: #0070f3;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -120,7 +111,7 @@ h3 {
 }
 
 p, ul, li {
-  color: #555;
+  color: var(--geist-foreground);
   font-weight: 400;
   font-size: 0.94rem;
   line-height: 1.7;
