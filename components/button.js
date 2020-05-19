@@ -1,11 +1,13 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default ({ text, icon, href = null }) => {
   return (
     <div>
       <Link href={href}>
-        <a>{icon}
-        <h4>{text}</h4></a>
+        <a>
+          {icon}
+          <h4>{text}</h4>
+        </a>
       </Link>
 
       <style jsx>{`
@@ -55,5 +57,5 @@ export default ({ text, icon, href = null }) => {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};

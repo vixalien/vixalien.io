@@ -8,7 +8,7 @@ const Logo = () => {
         fill="#000"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

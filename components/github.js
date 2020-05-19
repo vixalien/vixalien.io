@@ -8,7 +8,7 @@ const GitHub = () => {
         fill="black"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default GitHub
+export default GitHub;

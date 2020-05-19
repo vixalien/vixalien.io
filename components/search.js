@@ -56,10 +56,11 @@ export default ({ icon, ...props }) => {
           }
         }
 
-        div:focus-within, div:active {
+        div:focus-within,
+        div:active {
           border: 1px solid var(--accents-2);
         }
       `}</style>
     </>
-  )
-}
+  );
+};

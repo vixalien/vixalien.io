@@ -2,7 +2,7 @@ export default ({ children }) => {
   const hash = children
     .trim()
     .toLowerCase()
-    .replace(/ /g, '-')
+    .replace(/ /g, '-');
   return (
     <a href={'#' + hash} id={hash}>
       <h3>{children}</h3>
@@ -13,5 +13,5 @@ export default ({ children }) => {
         }
       `}</style>
     </a>
-  )
-}
+  );
+};

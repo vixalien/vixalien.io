@@ -12,5 +12,5 @@ export default ({ demo, api, link }) => {
         }
       `}</style>
     </a>
-  )
-}
+  );
+};
