@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://vixalien.now.sh/sitemap.xml

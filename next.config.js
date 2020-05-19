@@ -10,6 +10,9 @@ module.exports = withMDX({
       config.node = {
         fs: 'empty'
       };
+    } else {
+      // Generate sitemap
+      require('./lib/generate-sitemap');
     }
     // Allow absolute imports
     config.resolve.modules.push(__dirname);
