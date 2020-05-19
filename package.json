@@ -12,6 +12,7 @@
     "@next/mdx": "^9.3.6",
     "copee": "^1.0.6",
     "intersection-observer": "^0.7.0",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^9.3.6",
     "prismjs": "^1.17.1",
     "react": "^16.13.1",
