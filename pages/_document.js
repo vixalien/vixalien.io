@@ -26,19 +26,6 @@ class MyDocument extends Document {
           <link rel='mask-icon' href='/favicon/safari-pinned-tab.svg' color='#888' />
           <link rel='shortcut icon' href='/favicon/favicon.ico' />
           <link rel='preload' href='/fonts/inter.woff2' as="font" type="woff2"/>
-
-          <meta name='twitter:card' content='web site for vixalien' />
-          <meta name='twitter:url' content='vixalien.github.io' />
-          <meta name='twitter:title' content='vixalien' />
-          <meta name='twitter:description' content='web site for vixalien' />
-          <meta name='twitter:image' content='/favicon/android-chrome-192x192.png' />
-          <meta name='twitter:creator' content='@shemaangelo' />
-          <meta property='og:type' content='website' />
-          <meta property='og:title' content='vixalien' />
-          <meta property='og:description' content='web site for vixalien' />
-          <meta property='og:site_name' content='vixalien' />
-          <meta property='og:url' content='vixalien.github.io' />
-          <meta property='og:image' content='/favicon/apple-touch-icon.png' />
         </Head>
         <body>
           <script

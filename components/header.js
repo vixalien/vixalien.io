@@ -1,5 +1,6 @@
 import GitHub from '../components/github'
 import Vixalien from '../components/vixalien'
+import Head from 'next/head';
 
 export default function Header({ title, description, text }) {
 	return (

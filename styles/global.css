@@ -119,7 +119,7 @@ h3 {
   letter-spacing: -0.02rem;
 }
 
-p {
+p, ul, li {
   color: #555;
   font-weight: 400;
   font-size: 0.94rem;
@@ -178,5 +178,11 @@ body.animate .page {
     width: 0;
     left: 120%;
     opacity: 0.6;
+  }
+}
+
+@media all and (max-width: 600px) {
+  html, body {
+    font-size: 18px;
   }
 }

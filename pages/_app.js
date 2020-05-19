@@ -1,9 +1,12 @@
-import '../styles/global.css'
-import Vixalien from '../components/vixalien'
+import '../styles/global.css';
+import Vixalien from '../components/vixalien';
+import { DefaultSeo } from 'next-seo';
+import SEO from 'next-seo.config';
 
 const MyApp = ({ Component, pageProps }) => {
 	return (<>
 
+			<DefaultSeo {...SEO} />
 			<div className="page">
 				<main>
 					<Component {...pageProps} />
