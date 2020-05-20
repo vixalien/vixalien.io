@@ -1,12 +1,12 @@
 import Prism from 'prismjs';
 import 'prismjs/components/prism-jsx';
 
-const Code = ({ code }) => {
+const Code = ({ code, language = 'jsx' }) => {
   return (
     <>
       <code
         dangerouslySetInnerHTML={{
-          __html: Prism.highlight(code, Prism.languages['jsx'])
+          __html: Prism.highlight(code, Prism.languages[language])
         }}
       />
 

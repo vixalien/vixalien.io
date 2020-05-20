@@ -5,7 +5,7 @@ import Heading from 'components/heading';
 
 const Blog = ({ blog: post }) => (
   <>
-    <Link href={post.href}>
+    <Link href={post.href} as={post.href.replace(post.title,"[id]")}>
       <a>
         <div>
           <h3 dangerouslySetInnerHTML={{ __html: post.title }}></h3>

@@ -1,18 +1,18 @@
-import dynamic from 'next/dynamic';
+import Head from 'next/head';
+
 import { NextSeo, ArticleJsonLd } from 'next-seo';
 import useSWR from 'swr';
 import fetch from 'isomorphic-unfetch';
 
+import Navbar from 'components/navbar';
+import Header from 'components/header';
+
 import { getAllPostIds } from 'lib/posts';
+
 
 let fetcher = (path) => {
   return fetch(path).then((e) => e.json());
 };
-
-import Head from 'next/head';
-
-import Navbar from 'components/navbar';
-import Header from 'components/header';
 
 function BlogPostPage({ id }) {
   const { error, data } = useSWR(`/api/blog/show?id=${id}`, fetcher);

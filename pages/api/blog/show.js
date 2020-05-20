@@ -1,7 +1,13 @@
 import fs from 'fs';
 
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import { renderToString } from 'react-dom/server';
+
+import { MDXProvider } from '@mdx-js/react'
+
+import CompCode from 'components/code';
+
+const Code = props => <CompCode code={props.children} language={props.language}>{console.log("Here ur props: ", props)}</CompCode>
 
 let blogs = fs.readdirSync('blog/');
 
@@ -31,8 +37,12 @@ export default (req, res) => {
         .json({
           ok: true,
           data: data.meta,
-          html: ReactDOMServer.renderToString(<data.default />)
+          html: renderToString(
+            <MDXProvider components={{ code: Code }}>
+              <data.default />
+            </MDXProvider>)
         });
+      return data;
     })
-    .catch((err) => res.status(400).json({ ok: false, err }));
+    .catch((err) => res.status(400).json({ ok: false, err }))
 };
