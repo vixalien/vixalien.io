@@ -9,7 +9,6 @@ import Header from 'components/header';
 
 import { getAllPostIds } from 'lib/posts';
 
-
 let fetcher = (path) => {
   return fetch(path).then((e) => e.json());
 };

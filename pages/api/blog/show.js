@@ -3,11 +3,9 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-import { MDXProvider } from '@mdx-js/react'
+import { MDXProvider } from '@mdx-js/react';
 
-import CompCode from 'components/code';
-
-const Code = props => <CompCode code={props.children} language={props.language}>{console.log("Here ur props: ", props)}</CompCode>
+import MDXComponents from 'components/mdx-components';
 
 let blogs = fs.readdirSync('blog/');
 
@@ -32,17 +30,16 @@ export default (req, res) => {
   let ext = file.match(/(\.md|\.mdx)$/g)[0];
   import('blog/' + id + ext)
     .then((data) => {
-      res
-        .status(200)
-        .json({
-          ok: true,
-          data: data.meta,
-          html: renderToString(
-            <MDXProvider components={{ code: Code }}>
-              <data.default />
-            </MDXProvider>)
-        });
+      res.status(200).json({
+        ok: true,
+        data: data.meta,
+        html: renderToString(
+          <MDXProvider components={MDXComponents}>
+            <data.default />
+          </MDXProvider>
+        )
+      });
       return data;
     })
-    .catch((err) => res.status(400).json({ ok: false, err }))
+    .catch((err) => res.status(400).json({ ok: false, err }));
 };

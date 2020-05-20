@@ -45,7 +45,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon/favicon-16x16.png"
           />
-          <link rel="manifest" href="/favicon/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
           <link
             rel="mask-icon"
             href="/favicon/safari-pinned-tab.svg"
@@ -70,6 +70,17 @@ class MyDocument extends Document {
                 localStorage.setItem('swr-animated', '1');
               }
             } catch (e) {}
+            // serviceWorker registration
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/sw.js', { scope: '/' })
+                .then((reg) => {
+                  // registration worked
+                  console.log('SW Registration succeeded. Scope is ' + reg.scope);
+                }).catch((error) => {
+                  // registration failed
+                  console.log('SW Registration failed with ' + error);
+                })
+            };
           `
             }}
           />

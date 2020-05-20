@@ -1,5 +1,12 @@
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx$|\.md$/
+  extension: /\.mdx$|\.md$/,
+  options: {
+    remarkPlugins: [
+      require('remark-slug'),
+      require('remark-autolink-headings'),
+      require('remark-code-titles')
+    ]
+  }
 });
 
 module.exports = withMDX({
