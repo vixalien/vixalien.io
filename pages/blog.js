@@ -87,7 +87,7 @@ const Index = ({ blogs }) => {
         authorName="vixalien"
         description="read articles written by vixalien."
       />
-      <main>
+      <>
         <Header title="articles" description="read articles written by me" />
         <Navbar />
         <Search onChange={filter} />
@@ -96,7 +96,7 @@ const Index = ({ blogs }) => {
         ) : (
           <div>Nothing found</div>
         )}
-      </main>
+      </>
     </>
   );
 };

@@ -1,19 +1,23 @@
+import Link from 'next/link';
+
 import Button from 'components/button';
-import Heading from '../components/heading';
+import Heading from 'components/heading';
 
 const Blog = ({ blog: post }) => (
   <>
-    <a href={post.href}>
-      <div>
-        <h3 dangerouslySetInnerHTML={{ __html: post.title }}></h3>
-        <span>
-          <i>
-            Published at <b>{post.publishedAt}</b>
-          </i>
-        </span>
-        <p dangerouslySetInnerHTML={{ __html: post.summary }}></p>
-      </div>
-    </a>
+    <Link href={post.href}>
+      <a>
+        <div>
+          <h3 dangerouslySetInnerHTML={{ __html: post.title }}></h3>
+          <span>
+            <i>
+              Published at <b>{post.publishedAt}</b>
+            </i>
+          </span>
+          <p dangerouslySetInnerHTML={{ __html: post.summary }}></p>
+        </div>
+      </a>
+    </Link>
     <style jsx>{`
       h3 :global(b) {
         color: var(--accents-3);

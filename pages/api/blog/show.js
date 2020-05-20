@@ -1,5 +1,8 @@
 import fs from 'fs';
 
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+
 let blogs = fs.readdirSync('blog/');
 
 export default (req, res) => {
@@ -23,7 +26,13 @@ export default (req, res) => {
   let ext = file.match(/(\.md|\.mdx)$/g)[0];
   import('blog/' + id + ext)
     .then((data) => {
-      res.status(200).json({ ok: true, data: data.meta });
+      res
+        .status(200)
+        .json({
+          ok: true,
+          data: data.meta,
+          html: ReactDOMServer.renderToString(<data.default />)
+        });
     })
     .catch((err) => res.status(400).json({ ok: false, err }));
 };

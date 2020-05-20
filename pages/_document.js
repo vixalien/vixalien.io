@@ -56,7 +56,7 @@ class MyDocument extends Document {
             rel="preload"
             href="/fonts/inter.woff2"
             as="font"
-            type="woff2"
+            type="font/woff2"
           />
         </Head>
         <body>

@@ -40,9 +40,9 @@ export default function Header({ title, description, text }) {
         a {
           color: inherit;
           cursor: pointer;
-            padding: 10px;
-            margin: 0 10px;
-            border-radius: var(--radius);
+          padding: 10px;
+          margin: 0 10px;
+          border-radius: var(--radius);
         }
         a:hover {
           background-color: var(--accents-4);
