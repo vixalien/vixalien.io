@@ -7,7 +7,7 @@ import { MDXProvider } from '@mdx-js/react';
 
 import MDXComponents from 'components/mdx-components';
 
-let blogs = fs.readdirSync('blog/');
+let blogs = fs.readdirSync('/blog/');
 
 export default (req, res) => {
   // Check If there is ID
