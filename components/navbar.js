@@ -1,6 +1,6 @@
 import Button from './button';
 
-export default () => (
+const Navbar = () => (
   <>
     <div className="buttons">
       <Button
@@ -171,3 +171,5 @@ export default () => (
     `}</style>
   </>
 );
+
+export default Navbar;

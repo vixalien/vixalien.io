@@ -1,4 +1,4 @@
-export default ({ icon, ...props }) => {
+const Search = ({ icon, ...props }) => {
   return (
     <>
       <div>
@@ -64,3 +64,5 @@ export default ({ icon, ...props }) => {
     </>
   );
 };
+
+export default Search;

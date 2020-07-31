@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default ({ text, icon, href = null }) => {
+const Button = ({ text, icon, href = null }) => {
   return (
     <div>
       <Link href={href}>
@@ -59,3 +59,5 @@ export default ({ text, icon, href = null }) => {
     </div>
   );
 };
+
+export default Button;

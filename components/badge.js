@@ -1,4 +1,4 @@
-export default ({ demo, api, link }) => {
+const Badge = ({ demo, api, link }) => {
   return (
     <a href={link} target="_blank">
       <div>{demo ? 'demo' : 'API'}</div>
@@ -14,3 +14,5 @@ export default ({ demo, api, link }) => {
     </a>
   );
 };
+
+export default Badge;

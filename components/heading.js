@@ -1,4 +1,4 @@
-export default ({ children }) => {
+const Heading = ({ children }) => {
   const hash = children
     .trim()
     .toLowerCase()
@@ -15,3 +15,5 @@ export default ({ children }) => {
     </a>
   );
 };
+
+export default Heading;
