@@ -1,4 +1,5 @@
 import GitHub from '../components/github';
+import PayPal from '../components/paypal';
 import Vixalien from '../components/vixalien';
 import Theme from '../components/theme';
 import Head from 'next/head';
@@ -20,8 +21,13 @@ export default function Header({ title, description, text }) {
         </div>
 
         <div className="links">
-          <a href="/" aria-label="Vixalien Home">
-            <Vixalien width="30" />
+          <a
+            href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTV2TLWFUNHY8&source=url"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Donate on PayPal"
+          >
+            <PayPal />
           </a>
           <a
             href="https://github.com/vixalien"
