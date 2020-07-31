@@ -38,9 +38,7 @@ self.addEventListener('fetch', (event) => {
           fetch(event.request).then((response) => {
             let responseClone = response.clone();
             caches.open('v1').then((cache) => {
-              if (event.request.url.indexOf('favicon/') > 0) {
-                cache.put(event.request, responseClone);
-              }
+              cache.put(event.request, responseClone);
             });
             return response;
           })
