@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
       })
       .catch(() => {
         // Replace with offline
-        return caches.match('/offline');
+        return caches.match('/favicon/android-chrome-192x192.png');
       })
   );
 });

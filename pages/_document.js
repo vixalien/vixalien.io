@@ -53,6 +53,7 @@ class MyDocument extends Document {
             href="/fonts/inter.woff2"
             as="font"
             type="font/woff2"
+            crossOrigin="anonymous"
           />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -94,6 +95,8 @@ class MyDocument extends Document {
                   console.log('SW Registration failed with ' + error);
                 })
             };
+            // reload when connection restored
+            if (!navigator.onLine) window.ononline = () => history.go(location)
           `
             }}
           />
