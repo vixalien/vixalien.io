@@ -35,14 +35,14 @@ self.addEventListener('fetch', (event) => {
       .match(event.request)
       .then((resp) => {
         return (
-          resp ||
           fetch(event.request).then((response) => {
             let responseClone = response.clone();
             caches.open('v1').then((cache) => {
               cache.put(event.request, responseClone);
             });
             return response;
-          })
+          }) ||
+          resp
         );
       })
       .catch(() => {
