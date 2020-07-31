@@ -8,7 +8,8 @@ addEventListener('install', (event) => {
             '/manifest.json',
             '/fonts/inter.woff2',
             '/favicon/favicon.ico',
-            '/favicon/android-chrome-192x192.png'
+            '/favicon/android-chrome-192x192.png',
+            '/offline'
           ]);
         })
         .catch((err) => console.log('Uncaught err while pre-caching: ', err))
@@ -46,7 +47,7 @@ self.addEventListener('fetch', (event) => {
       })
       .catch(() => {
         // Replace with offline
-        return caches.match('/favicon/android-chrome-192x192.png');
+        return caches.match('/offline?try=' + event.request.url);
       })
   );
 });
