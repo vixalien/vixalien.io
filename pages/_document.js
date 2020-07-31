@@ -58,7 +58,7 @@ class MyDocument extends Document {
             as="font"
             type="font/woff2"
           />
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-170473951-1`}
@@ -72,7 +72,7 @@ class MyDocument extends Document {
             gtag('config', 'UA-170473951-1', {
               page_path: window.location.pathname,
             });
-          `,
+          `
             }}
           />
         </Head>

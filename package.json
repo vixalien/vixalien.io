@@ -13,23 +13,23 @@
     "lint": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\""
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.1",
-    "@next/mdx": "^9.3.6",
+    "@mdx-js/loader": "^1.6.16",
+    "@next/mdx": "^9.5.1",
     "copee": "^1.0.6",
-    "globby": "^11.0.0",
+    "globby": "^11.0.1",
     "intersection-observer": "^0.7.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.3.6",
-    "next-seo": "^4.4.0",
+    "next": "^9.5.1",
+    "next-seo": "^4.7.3",
     "prismjs": "^1.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-intersection-observer": "^8.25.1",
-    "remark-autolink-headings": "^6.0.0",
+    "remark-autolink-headings": "^6.0.1",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0",
-    "styled-components": "^5.1.0",
-    "swr": "^0.2.0"
+    "styled-components": "^5.1.1",
+    "swr": "^0.2.3"
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
