@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#888" />
 
           <link rel="canonical" href="https://vixalien.now.sh"/>
-          <link rel="preconnect" href="https://www.google-analytics.com/">
+          <link rel="preconnect" href="https://www.google-analytics.com/"/>
 
           <link
             rel="apple-touch-icon"
