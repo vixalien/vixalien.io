@@ -24,6 +24,8 @@ class MyDocument extends Document {
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content="#888" />
 
+          <link rel="canonical" href="https://vixalien.now.sh"/>
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
