@@ -31,17 +31,18 @@ onpush = (e) => {
 self.addEventListener('fetch', (event) => {
   console.log('Got a fetch event: ', event);
   event.respondWith(
+   fetch(event.request).then((response) => {
+     let responseClone = response.clone();
+     caches.open('v1').then((cache) => {
+       cache.put(event.request, responseClone);
+     });
+     return response;
+    }) ||
     caches
       .match(event.request)
       .then((resp) => {
         return (
-          fetch(event.request).then((response) => {
-            let responseClone = response.clone();
-            caches.open('v1').then((cache) => {
-              cache.put(event.request, responseClone);
-            });
-            return response;
-          }).catch(() => resp);
+          resp
         );
       })
       .catch(() => {
