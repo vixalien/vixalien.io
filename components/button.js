@@ -6,7 +6,7 @@ const Button = ({ text, icon, href = null }) => {
       <Link href={href}>
         <a>
           {icon}
-          <h4>{text}</h4>
+          <span>{text}</span>
         </a>
       </Link>
 
@@ -28,7 +28,7 @@ const Button = ({ text, icon, href = null }) => {
           color: inherit;
         }
 
-        h4 {
+        span {
           margin: auto 0.5rem;
           font-weight: 700;
           font-size: 0.95rem;
@@ -47,7 +47,7 @@ const Button = ({ text, icon, href = null }) => {
             padding-left: 0.5rem;
           }
 
-          h4 {
+          span {
             font-size: 0.75rem;
           }
         }
