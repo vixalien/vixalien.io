@@ -37,7 +37,7 @@ export default function Header({ title, description, text }) {
           >
             <GitHub />
           </a>
-          <a aria-label="Toggle theme">
+          <a aria-label="Toggle theme" href="#">
             <Theme />
           </a>
         </div>
